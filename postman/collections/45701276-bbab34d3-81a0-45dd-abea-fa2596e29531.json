@@ -7,11 +7,6 @@
 	},
 	"item": [
 		{
-			"name": "New Folder",
-			"item": [],
-			"id": "45701276-a955f9c2-3938-4e12-a32c-e170b0b047c4"
-		},
-		{
 			"name": "InicioSite",
 			"event": [
 				{
@@ -1158,6 +1153,18 @@
 				}
 			],
 			"id": "45701276-a3d5bd00-73e8-405e-ad13-8cddb340f264",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "45701276-4648c2dc-ee04-47c8-b636-3a2d37043d41",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
