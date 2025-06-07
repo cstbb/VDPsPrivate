@@ -8,20 +8,7 @@
 	"item": [
 		{
 			"name": "Usuários",
-			"item": [
-				{
-					"name": "New Request",
-					"id": "45701276-8d795cc8-5f1b-4426-9357-1ba455f00f22",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": []
-					},
-					"response": []
-				}
-			],
+			"item": [],
 			"id": "45701276-1a3fda19-3f21-4793-84aa-564728a57937",
 			"event": [
 				{
