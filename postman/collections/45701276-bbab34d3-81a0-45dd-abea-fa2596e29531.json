@@ -569,8 +569,8 @@
 			"response": []
 		},
 		{
-			"name": "Segurança",
-			"id": "45701276-a3d5bd00-73e8-405e-ad13-8cddb340f264",
+			"name": "AgendarConsulta",
+			"id": "45701276-16aaba3f-83fd-4b09-92fe-babeb07897cf",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -581,8 +581,8 @@
 			"response": []
 		},
 		{
-			"name": "AgendarConsulta",
-			"id": "45701276-16aaba3f-83fd-4b09-92fe-babeb07897cf",
+			"name": "Segurança",
+			"id": "45701276-a3d5bd00-73e8-405e-ad13-8cddb340f264",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
