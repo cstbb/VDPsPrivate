@@ -99,6 +99,18 @@
 				"header": []
 			},
 			"response": []
+		},
+		{
+			"name": "Segurança",
+			"id": "45701276-a3d5bd00-73e8-405e-ad13-8cddb340f264",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }
