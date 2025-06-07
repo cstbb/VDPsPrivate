@@ -7,11 +7,6 @@
 	},
 	"item": [
 		{
-			"name": "AgendaConsulta",
-			"item": [],
-			"id": "45701276-92650be0-4d8b-4065-ab08-9b9ec4a384cb"
-		},
-		{
 			"name": "Usuários",
 			"event": [
 				{
