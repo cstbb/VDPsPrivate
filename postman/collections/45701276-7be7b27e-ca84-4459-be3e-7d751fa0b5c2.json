@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "45701276-7be7b27e-ca84-4459-be3e-7d751fa0b5c2",
+		"name": "Sistema de Gestão Hospitalar VidaPlus",
+		"description": "## Projeto\n\nO VidaPlus é um sistema moderno de gestão hospitalar desenvolvido para centralizar e otimizar todas as operações relacionadas à saúde. Nossa solução integra hospitais, clínicas, laboratórios e equipes de home care em uma única plataforma.\n\n### ✨ Principais Funcionalidades\n\n- 👤 **Gestão de Pacientes**\n    \n    - Cadastro completo\n        \n    - Histórico médico\n        \n    - Agendamento de consultas\n        \n    - Prontuários eletrônicos\n        \n- 👨‍⚕️ **Gestão de Profissionais**\n    \n    - Cadastro de médicos\n        \n    - Controle de agendas\n        \n    - Prescrições digitais\n        \n    - Histórico de atendimentos\n        \n- 🏥 **Administração Hospitalar**\n    \n    - Controle de leitos\n        \n    - Gestão de suprimentos\n        \n    - Relatórios financeiros\n        \n    - Indicadores de desempenho\n        \n- 💻 **Telemedicina**\n    \n    - Consultas online\n        \n    - Prescrições digitais\n        \n    - Agendamento remoto\n        \n    - Prontuários eletrônicos\n        \n\n## 🚀 Começando\n\n### Pré-requisitos\n\n- Python 3.8 ou superior\n    \n- pip (gerenciador de pacotes Python)\n    \n- Postman (para testes da API)\n    \n\n### 🔧 Instalação\n\n1. Clone o repositório\n    \n\n```\ngit clone https://github.com/seu-usuario/vidaplus.git\ncd vidaplus\n\n ```\n\n1. Crie e ative o ambiente virtual\n    \n\n```\n# Windows\npython -m venv venv\nvenv\\Scripts\\activate\n# Linux/Mac\npython -m venv venv\nsource venv/bin/activate\n\n ```\n\n1. Instale as dependências\n    \n\n```\npip install -r requirements.txt\n\n ```\n\n1. Configure as variáveis de ambiente Crie um arquivo `.env` na raiz do projeto:\n    \n\n```\nDATABASE_URL=sqlite:///vidaplus.db\nJWT_SECRET_KEY=sua-chave-secreta-aqui\nFLASK_ENV=development\nFLASK_APP=app.py\n\n ```\n\n1. Execute o sistema\n    \n\n```\npython app.py\n\n ```\n\n## 📡 Endpoints da API\n\n### 🔐 Autenticação\n\n- `POST /api/auth/registro` - Registro de novo usuário\n    \n- `POST /api/auth/login` - Login de usuário\n    \n\n### 👤 Pacientes\n\n- `POST /api/pacientes` - Cadastro de novo paciente\n    \n- `GET /api/pacientes/{id}` - Consulta de paciente\n    \n- `PUT /api/pacientes/{id}` - Atualização de dados\n    \n\n### 📅 Consultas\n\n- `POST /api/consultas` - Agendamento de consulta\n    \n- `GET /api/consultas/{id}` - Detalhes da consulta\n    \n- `PUT /api/consultas/{id}` - Atualização de status\n    \n\n### 📋 Prontuários\n\n- `POST /api/prontuarios` - Criação de prontuário\n    \n- `GET /api/prontuarios/{id}` - Consulta de prontuário\n    \n- `PUT /api/prontuarios/{id}` - Atualização de prontuário\n    \n\n## 🛡️ Segurança\n\n- 🔒 Autenticação via JWT\n    \n- 🔐 Senhas criptografadas com bcrypt\n    \n- 👥 Controle de acesso por perfil\n    \n- 📜 Conformidade com LGPD\n    \n- 🔍 Registro de auditoria\n    \n\n## 📊 Banco de Dados\n\nO sistema utiliza SQLite como banco de dados principal, com suporte para migração para PostgreSQL em ambiente de produção.\n\n## 🧪 Testes\n\nPara executar os testes:\n\n```\npython -m pytest\n\n ```\n\n## 📝 Documentação\n\nA documentação completa do sistema está disponível em:\n\n- [Documentação Técnica](https://github.com/maydoc/VidaPlus/blob/main/DOCUMENTACAO.md)\n    \n- [Guia de API](https://github.com/maydoc/VidaPlus/blob/main/API.md)\n    \n- [Manual do Usuário](https://github.com/maydoc/VidaPlus/blob/main/MANUAL.md)\n    \n\n## 🤝 Contribuindo\n\n1. Faça o fork do projeto\n    \n2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)\n    \n3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)\n    \n4. Push para a branch (`git push origin feature/AmazingFeature`)\n    \n5. Abra um Pull Request\n    \n\n## 📞 Suporte\n\nPara suporte, envie um email para [suporte@vidaplus.com](https://mailto:suporte@vidaplus.com) ou abra uma issue no GitHub.\n\n## 🙏 Agradecimentos\n\n- [Flask](https://flask.palletsprojects.com/)\n    \n- [SQLAlchemy](https://www.sqlalchemy.org/)\n    \n- [JWT](https://jwt.io/)\n    \n- [Postman](https://www.postman.com/)\n    \n\n---\n\nEndFragment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuários",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3a94fc13-cea2-4a77-b622-cd2abe215a68",
+						"exec": [
+							"// request POST /users/signup\r",
+							"// body JSON\r",
+							"{\r",
+							"  \"name\": \"Cambriel\",\r",
+							"  \"email\": \"cambriel@gmail.com\",\r",
+							"  \"password\": \"camb0522\"\r",
+							"}\r",
+							"\r",
+							"// response\r",
+							"// status 201 CREATED\r",
+							"{\r",
+							"  token: \"um token jwt\"\r",
+							"}\r",
+							"\r",
+							"public class TesteUsuarios {\r",
+							"    public static void main(String[] args) {\r",
+							"        Usuario admin = new Usuario(\"Camila\", \"admin\", \"4462521\", TipoUsuario.ADMINISTRADOR);\r",
+							"        Usuario medico = new Usuario(\"Dra. Fabia\", \"fabia\", \"senha\", TipoUsuario.MEDICO);\r",
+							"\r",
+							"        System.out.println(admin);\r",
+							"        System.out.println(medico);\r",
+							"    }\r",
+							"}\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "45701276-7bc8e1a9-ecad-417b-9277-302cec1959c2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"id": "45701276-c7d4fa06-4ae0-4f69-b9c4-867e2ae7c7c0",
+					"name": "Usuários",
+					"originalRequest": {
+						"method": "GET",
+						"header": []
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"responseTime": null,
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Cadastro_Pacientes",
+			"id": "45701276-5289e4ed-149f-485d-8abb-2686eb75ce9d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Perfis",
+			"id": "45701276-393d4d5a-227c-4984-9cfd-53c7aa2af729",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "InicioSite",
+			"id": "45701276-ffab9c6b-1d52-49cc-9ea2-60ccb437a6f2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Segurança",
+			"id": "45701276-5e1d8d95-80d7-4fec-9325-4f0cb7beee83",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "AgendarConsulta",
+			"id": "45701276-468b7185-7ec1-4a87-a9ba-de820316dc19",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
