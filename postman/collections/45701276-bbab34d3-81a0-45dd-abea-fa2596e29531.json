@@ -7,6 +7,11 @@
 	},
 	"item": [
 		{
+			"name": "New Folder",
+			"item": [],
+			"id": "45701276-a955f9c2-3938-4e12-a32c-e170b0b047c4"
+		},
+		{
 			"name": "InicioSite",
 			"event": [
 				{
