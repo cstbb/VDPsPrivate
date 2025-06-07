@@ -213,6 +213,18 @@
 			"response": []
 		},
 		{
+			"name": "Perfis",
+			"id": "45701276-c8579637-d7df-47fd-833e-97a7c7d7ef90",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
 			"name": "Cadastro_Pacientes",
 			"event": [
 				{
@@ -421,18 +433,6 @@
 				}
 			],
 			"id": "45701276-63dfb7cd-254a-4650-a674-9943e654e5ea",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": []
-			},
-			"response": []
-		},
-		{
-			"name": "Perfis",
-			"id": "45701276-c8579637-d7df-47fd-833e-97a7c7d7ef90",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
