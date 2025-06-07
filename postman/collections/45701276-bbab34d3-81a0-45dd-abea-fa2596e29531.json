@@ -330,6 +330,42 @@
 		},
 		{
 			"name": "Usuários",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3a94fc13-cea2-4a77-b622-cd2abe215a68",
+						"exec": [
+							"// request POST /users/signup\r",
+							"// body JSON\r",
+							"{\r",
+							"  \"name\": \"Cambriel\",\r",
+							"  \"email\": \"cambriel@gmail.com\",\r",
+							"  \"password\": \"camb0522\"\r",
+							"}\r",
+							"\r",
+							"// response\r",
+							"// status 201 CREATED\r",
+							"{\r",
+							"  token: \"um token jwt\"\r",
+							"}\r",
+							"\r",
+							"public class TesteUsuarios {\r",
+							"    public static void main(String[] args) {\r",
+							"        Usuario admin = new Usuario(\"Camila\", \"admin\", \"4462521\", TipoUsuario.ADMINISTRADOR);\r",
+							"        Usuario medico = new Usuario(\"Dra. Fabia\", \"fabia\", \"senha\", TipoUsuario.MEDICO);\r",
+							"\r",
+							"        System.out.println(admin);\r",
+							"        System.out.println(medico);\r",
+							"    }\r",
+							"}\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"id": "45701276-164ebaed-7342-43b1-a608-489f47a3ce16",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
