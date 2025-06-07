@@ -108,7 +108,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "AgendarConsulta",
 			"id": "45701276-16aaba3f-83fd-4b09-92fe-babeb07897cf",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
