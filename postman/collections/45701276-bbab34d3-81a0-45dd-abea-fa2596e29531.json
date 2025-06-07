@@ -8,7 +8,20 @@
 	"item": [
 		{
 			"name": "AgendaConsulta",
-			"item": [],
+			"item": [
+				{
+					"name": "New Request",
+					"id": "45701276-78811401-3214-4ee6-b0be-64ac069ca132",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
 			"id": "45701276-92650be0-4d8b-4065-ab08-9b9ec4a384cb"
 		},
 		{
