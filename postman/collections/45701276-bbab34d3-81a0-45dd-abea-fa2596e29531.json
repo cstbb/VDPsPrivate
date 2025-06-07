@@ -330,30 +330,6 @@
 		},
 		{
 			"name": "New Request",
-			"id": "45701276-70870653-3256-4b16-b274-bf46c45a0494",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": []
-			},
-			"response": []
-		},
-		{
-			"name": "New Request",
-			"id": "45701276-31afbcaa-99ab-4767-81b8-9f49c5a2ce37",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": []
-			},
-			"response": []
-		},
-		{
-			"name": "New Request",
 			"id": "45701276-ffa40a3f-a18a-4f70-bdc8-0d1c9e7bf3cf",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
