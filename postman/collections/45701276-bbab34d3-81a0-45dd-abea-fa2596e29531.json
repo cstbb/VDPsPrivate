@@ -851,6 +851,18 @@
 			"response": []
 		},
 		{
+			"name": "Telemedicina",
+			"id": "45701276-4648c2dc-ee04-47c8-b636-3a2d37043d41",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
 			"name": "Segurança",
 			"event": [
 				{
@@ -1153,18 +1165,6 @@
 				}
 			],
 			"id": "45701276-a3d5bd00-73e8-405e-ad13-8cddb340f264",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": []
-			},
-			"response": []
-		},
-		{
-			"name": "New Request",
-			"id": "45701276-4648c2dc-ee04-47c8-b636-3a2d37043d41",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
