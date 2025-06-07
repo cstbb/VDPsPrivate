@@ -7,69 +7,6 @@
 	},
 	"item": [
 		{
-			"name": "Usuários",
-			"item": [],
-			"id": "45701276-1a3fda19-3f21-4793-84aa-564728a57937",
-			"event": [
-				{
-					"listen": "prerequest",
-					"script": {
-						"id": "b4b927e1-351a-486b-a60a-bd4046ab77a9",
-						"type": "text/javascript",
-						"packages": {},
-						"exec": [
-							"// request POST /users/signup\r",
-							"// body JSON\r",
-							"{\r",
-							"  \"name\": \"Cambriel\",\r",
-							"  \"email\": \"cambriel@gmail.com\",\r",
-							"  \"password\": \"camb0522\"\r",
-							"}\r",
-							"\r",
-							"// response\r",
-							"// status 201 CREATED\r",
-							"{\r",
-							" "
-						]
-					}
-				},
-				{
-					"listen": "test",
-					"script": {
-						"id": "dfc764ea-084c-4d8d-b960-7f4ae9060325",
-						"type": "text/javascript",
-						"packages": {},
-						"exec": [
-							"// request POST /users/signup\r",
-							"// body JSON\r",
-							"{\r",
-							"  \"name\": \"Cambriel\",\r",
-							"  \"email\": \"cambriel@gmail.com\",\r",
-							"  \"password\": \"camb0522\"\r",
-							"}\r",
-							"\r",
-							"// response\r",
-							"// status 201 CREATED\r",
-							"{\r",
-							"  token: \"um token jwt\"\r",
-							"}\r",
-							"\r",
-							"public class TesteUsuarios {\r",
-							"    public static void main(String[] args) {\r",
-							"        Usuario admin = new Usuario(\"Camila\", \"admin\", \"4462521\", TipoUsuario.ADMINISTRADOR);\r",
-							"        Usuario medico = new Usuario(\"Dra. Fabia\", \"fabia\", \"senha\", TipoUsuario.MEDICO);\r",
-							"\r",
-							"        System.out.println(admin);\r",
-							"        System.out.println(medico);\r",
-							"    }\r",
-							"}\r",
-							""
-						]
-					}
-				}
-			]
-		},
-		{
 			"name": "CadastroPaciente",
 			"item": [],
 			"id": "45701276-00beff87-f8af-46be-996c-ec078dd744d0",
