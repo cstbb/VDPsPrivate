@@ -8,7 +8,20 @@
 	"item": [
 		{
 			"name": "New Folder",
-			"item": [],
+			"item": [
+				{
+					"name": "New Request",
+					"id": "45701276-ded1129a-2b31-4b19-9c6f-cb18a2c41640",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
 			"id": "45701276-629701e7-e1c6-4740-8a16-243793c2f66a"
 		},
 		{
