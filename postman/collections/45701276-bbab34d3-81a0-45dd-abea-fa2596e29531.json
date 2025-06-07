@@ -8,20 +8,7 @@
 	"item": [
 		{
 			"name": "AgendaConsulta",
-			"item": [
-				{
-					"name": "New Request",
-					"id": "45701276-78811401-3214-4ee6-b0be-64ac069ca132",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": []
-					},
-					"response": []
-				}
-			],
+			"item": [],
 			"id": "45701276-92650be0-4d8b-4065-ab08-9b9ec4a384cb"
 		},
 		{
@@ -111,6 +98,18 @@
 		{
 			"name": "Segurança",
 			"id": "45701276-a3d5bd00-73e8-405e-ad13-8cddb340f264",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "45701276-16aaba3f-83fd-4b09-92fe-babeb07897cf",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
