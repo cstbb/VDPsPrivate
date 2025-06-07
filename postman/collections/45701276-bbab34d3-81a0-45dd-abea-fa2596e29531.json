@@ -10,7 +10,19 @@
 			"name": "New Folder",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "InicioSite",
+					"id": "45701276-c07a26e7-e083-4988-8c5a-2e3fea865ec0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "InicioSite",
 					"id": "45701276-ded1129a-2b31-4b19-9c6f-cb18a2c41640",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -23,18 +35,6 @@
 				}
 			],
 			"id": "45701276-629701e7-e1c6-4740-8a16-243793c2f66a"
-		},
-		{
-			"name": "InicioSite",
-			"id": "45701276-c07a26e7-e083-4988-8c5a-2e3fea865ec0",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": []
-			},
-			"response": []
 		},
 		{
 			"name": "Usuários",
