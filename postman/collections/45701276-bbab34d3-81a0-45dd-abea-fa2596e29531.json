@@ -1,0 +1,368 @@
+{
+	"info": {
+		"_postman_id": "45701276-bbab34d3-81a0-45dd-abea-fa2596e29531",
+		"name": "Sistema de Gestão Hospitalar VidaPlus",
+		"description": "## Projeto\n\nO VidaPlus é um sistema moderno de gestão hospitalar desenvolvido para centralizar e otimizar todas as operações relacionadas à saúde. Nossa solução integra hospitais, clínicas, laboratórios e equipes de home care em uma única plataforma.\n\n### ✨ Principais Funcionalidades\n\n- 👤 **Gestão de Pacientes**\n    \n    - Cadastro completo\n        \n    - Histórico médico\n        \n    - Agendamento de consultas\n        \n    - Prontuários eletrônicos\n        \n- 👨‍⚕️ **Gestão de Profissionais**\n    \n    - Cadastro de médicos\n        \n    - Controle de agendas\n        \n    - Prescrições digitais\n        \n    - Histórico de atendimentos\n        \n- 🏥 **Administração Hospitalar**\n    \n    - Controle de leitos\n        \n    - Gestão de suprimentos\n        \n    - Relatórios financeiros\n        \n    - Indicadores de desempenho\n        \n- 💻 **Telemedicina**\n    \n    - Consultas online\n        \n    - Prescrições digitais\n        \n    - Agendamento remoto\n        \n    - Prontuários eletrônicos\n        \n\n## 🚀 Começando\n\n### Pré-requisitos\n\n- Python 3.8 ou superior\n    \n- pip (gerenciador de pacotes Python)\n    \n- Postman (para testes da API)\n    \n\n### 🔧 Instalação\n\n1. Clone o repositório\n    \n\n```\ngit clone https://github.com/seu-usuario/vidaplus.git\ncd vidaplus\n\n ```\n\n1. Crie e ative o ambiente virtual\n    \n\n```\n# Windows\npython -m venv venv\nvenv\\Scripts\\activate\n# Linux/Mac\npython -m venv venv\nsource venv/bin/activate\n\n ```\n\n1. Instale as dependências\n    \n\n```\npip install -r requirements.txt\n\n ```\n\n1. Configure as variáveis de ambiente Crie um arquivo `.env` na raiz do projeto:\n    \n\n```\nDATABASE_URL=sqlite:///vidaplus.db\nJWT_SECRET_KEY=sua-chave-secreta-aqui\nFLASK_ENV=development\nFLASK_APP=app.py\n\n ```\n\n1. Execute o sistema\n    \n\n```\npython app.py\n\n ```\n\n## 📡 Endpoints da API\n\n### 🔐 Autenticação\n\n- `POST /api/auth/registro` - Registro de novo usuário\n    \n- `POST /api/auth/login` - Login de usuário\n    \n\n### 👤 Pacientes\n\n- `POST /api/pacientes` - Cadastro de novo paciente\n    \n- `GET /api/pacientes/{id}` - Consulta de paciente\n    \n- `PUT /api/pacientes/{id}` - Atualização de dados\n    \n\n### 📅 Consultas\n\n- `POST /api/consultas` - Agendamento de consulta\n    \n- `GET /api/consultas/{id}` - Detalhes da consulta\n    \n- `PUT /api/consultas/{id}` - Atualização de status\n    \n\n### 📋 Prontuários\n\n- `POST /api/prontuarios` - Criação de prontuário\n    \n- `GET /api/prontuarios/{id}` - Consulta de prontuário\n    \n- `PUT /api/prontuarios/{id}` - Atualização de prontuário\n    \n\n## 🛡️ Segurança\n\n- 🔒 Autenticação via JWT\n    \n- 🔐 Senhas criptografadas com bcrypt\n    \n- 👥 Controle de acesso por perfil\n    \n- 📜 Conformidade com LGPD\n    \n- 🔍 Registro de auditoria\n    \n\n## 📊 Banco de Dados\n\nO sistema utiliza SQLite como banco de dados principal, com suporte para migração para PostgreSQL em ambiente de produção.\n\n## 🧪 Testes\n\nPara executar os testes:\n\n```\npython -m pytest\n\n ```\n\n## 📝 Documentação\n\nA documentação completa do sistema está disponível em:\n\n- [Documentação Técnica](https://github.com/maydoc/VidaPlus/blob/main/DOCUMENTACAO.md)\n    \n- [Guia de API](https://github.com/maydoc/VidaPlus/blob/main/API.md)\n    \n- [Manual do Usuário](https://github.com/maydoc/VidaPlus/blob/main/MANUAL.md)\n    \n\n## 🤝 Contribuindo\n\n1. Faça o fork do projeto\n    \n2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)\n    \n3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)\n    \n4. Push para a branch (`git push origin feature/AmazingFeature`)\n    \n5. Abra um Pull Request\n    \n\n## 📞 Suporte\n\nPara suporte, envie um email para [suporte@vidaplus.com](https://mailto:suporte@vidaplus.com) ou abra uma issue no GitHub.\n\n## 🙏 Agradecimentos\n\n- [Flask](https://flask.palletsprojects.com/)\n    \n- [SQLAlchemy](https://www.sqlalchemy.org/)\n    \n- [JWT](https://jwt.io/)\n    \n- [Postman](https://www.postman.com/)\n    \n\n---\n\nEndFragment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuários",
+			"item": [
+				{
+					"name": "New Request",
+					"id": "45701276-8d795cc8-5f1b-4426-9357-1ba455f00f22",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
+			"id": "45701276-1a3fda19-3f21-4793-84aa-564728a57937",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "b4b927e1-351a-486b-a60a-bd4046ab77a9",
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							"// request POST /users/signup\r",
+							"// body JSON\r",
+							"{\r",
+							"  \"name\": \"Cambriel\",\r",
+							"  \"email\": \"cambriel@gmail.com\",\r",
+							"  \"password\": \"camb0522\"\r",
+							"}\r",
+							"\r",
+							"// response\r",
+							"// status 201 CREATED\r",
+							"{\r",
+							" "
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "dfc764ea-084c-4d8d-b960-7f4ae9060325",
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							"// request POST /users/signup\r",
+							"// body JSON\r",
+							"{\r",
+							"  \"name\": \"Cambriel\",\r",
+							"  \"email\": \"cambriel@gmail.com\",\r",
+							"  \"password\": \"camb0522\"\r",
+							"}\r",
+							"\r",
+							"// response\r",
+							"// status 201 CREATED\r",
+							"{\r",
+							"  token: \"um token jwt\"\r",
+							"}\r",
+							"\r",
+							"public class TesteUsuarios {\r",
+							"    public static void main(String[] args) {\r",
+							"        Usuario admin = new Usuario(\"Camila\", \"admin\", \"4462521\", TipoUsuario.ADMINISTRADOR);\r",
+							"        Usuario medico = new Usuario(\"Dra. Fabia\", \"fabia\", \"senha\", TipoUsuario.MEDICO);\r",
+							"\r",
+							"        System.out.println(admin);\r",
+							"        System.out.println(medico);\r",
+							"    }\r",
+							"}\r",
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "CadastroPaciente",
+			"item": [],
+			"id": "45701276-00beff87-f8af-46be-996c-ec078dd744d0",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "3878e817-32ec-4d97-8fca-ba3fbf63b781",
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "f4367ea0-e392-4b4c-92d4-8307a473e539",
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							"// request GET /patient\r",
+							"// headers.authorization = \"token jwt\"\r",
+							"\r",
+							"// response\r",
+							"// status 200 OK\r",
+							"[\r",
+							"    {\r",
+							"        \"id\": \"paciente1\",\r",
+							"        \"creator\":\r",
+							"        {\r",
+							"            \"id\": \"paciente1\",\r",
+							"            \"name\": \"Lucia\"\r",
+							"        }\r",
+							"        \"name\": \"Lucia Green\",\r",
+							"        \"age\": 23,\r",
+							"        \"email\":\"luciagg22@gmail.com\",\r",
+							"        \"telefon\":119953326543,\r",
+							"        \"address\": \"123 AV Nacoes, Brooklin - SP / 123\",\r",
+							"        \"createdAt\": \"2025-06-20T12:11:58:000Z\"\r",
+							"        \"updatedAt\": \"2025-06-20T12:11:58:000Z\"\r",
+							"    },\r",
+							"    {\r",
+							"        \"id\": \"uma uuid v4\",\r",
+							"        \"creator\":\r",
+							"        {\r",
+							"            \"id\": \"uma uuid v4\",\r",
+							"            \"name\": \"Fulano\"\r",
+							"        }\r",
+							"        \"name\": \"Emma Johnson\",\r",
+							"        \"age\": 30,\r",
+							"        \"email\":\"example@example.com\",\r",
+							"        \"telefon\":12346,\r",
+							"        \"address\": \"56 Oxford Road London United Kingdom zipCode SW1A 1AA\",\r",
+							"        \"createdAt\": \"2025-01-20T12:11:47:000Z\"\r",
+							"        \"updatedAt\": \"2025-01-20T12:11:47:000Z\"\r",
+							"\r",
+							"    }\r",
+							"]"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Perfis",
+			"item": [],
+			"id": "45701276-2f31c1d7-efc3-4714-9c7a-75979709743f",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "dffcbcd9-8253-4055-be5b-997379876a59",
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "6e125ce8-73c6-4264-b9e7-881a31b1c700",
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							"public enum TipoUsuario {\r",
+							"    ADMINISTRADOR,\r",
+							"    MEDICO,\r",
+							"    ENFERMEIRO,\r",
+							"    RECEPCIONISTA,\r",
+							"    PACIENTE\r",
+							"}\r",
+							"\r",
+							"\r",
+							"public class Usuario {\r",
+							"    private String nome;\r",
+							"    private String login;\r",
+							"    private String senha;\r",
+							"    private TipoUsuario tipo;\r",
+							"\r",
+							"    public Usuario(String nome, String login, String senha, TipoUsuario tipo) {\r",
+							"        this.nome = nome;\r",
+							"        this.login = login;\r",
+							"        this.senha = senha;\r",
+							"        this.tipo = tipo;\r",
+							"    }\r",
+							"\r",
+							"    // Getters e Setters\r",
+							"    public String getNome() {\r",
+							"        return nome;\r",
+							"    }\r",
+							"\r",
+							"    public String getLogin() {\r",
+							"        return login;\r",
+							"    }\r",
+							"\r",
+							"    public String getSenha() {\r",
+							"        return senha;\r",
+							"    }\r",
+							"\r",
+							"    public TipoUsuario getTipo() {\r",
+							"        return tipo;\r",
+							"    }\r",
+							"\r",
+							"    public void setSenha(String senha) {\r",
+							"        this.senha = senha;\r",
+							"    }\r",
+							"\r",
+							"    public void setTipo(TipoUsuario tipo) {\r",
+							"        this.tipo = tipo;\r",
+							"    }\r",
+							"\r",
+							"    @Override\r",
+							"    public String toString() {\r",
+							"        return \"Usuário: \" + nome + \" | Tipo: \" + tipo;\r",
+							"    }\r",
+							"}"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "InicioSite",
+			"item": [],
+			"id": "45701276-4278ef56-6542-4385-893d-9a12f69d7417",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "f08b28f9-c29b-4daf-91d0-f44f19cc49df",
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "51b9d387-8da7-4c0c-8a44-c23337c0ca87",
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							"import javax.swing.*;\r",
+							"import java.awt.*;\r",
+							"import java.awt.event.*;\r",
+							"\r",
+							"public class HospitalLogin extends JFrame {\r",
+							"\r",
+							"    // Componentes da interface\r",
+							"    private JTextField usuarioField;\r",
+							"    private JPasswordField senhaField;\r",
+							"    private JButton loginButton, sairButton;\r",
+							"\r",
+							"    public HospitalLogin() {\r",
+							"        setTitle(\"Sistema Hospitalar - Login\");\r",
+							"        setSize(400, 250);\r",
+							"        setDefaultCloseOperation(EXIT_ON_CLOSE);\r",
+							"        setLocationRelativeTo(null); // Centraliza a janela\r",
+							"        setLayout(new BorderLayout());\r",
+							"\r",
+							"        // Painel principal\r",
+							"        JPanel painel = new JPanel(new GridLayout(3, 2, 10, 10));\r",
+							"        painel.setBorder(BorderFactory.createEmptyBorder(30, 30, 10, 30));\r",
+							"\r",
+							"        // Labels e campos\r",
+							"        painel.add(new JLabel(\"Usuário:\"));\r",
+							"        usuarioField = new JTextField();\r",
+							"        painel.add(usuarioField);\r",
+							"\r",
+							"        painel.add(new JLabel(\"Senha:\"));\r",
+							"        senhaField = new JPasswordField();\r",
+							"        painel.add(senhaField);\r",
+							"\r",
+							"        loginButton = new JButton(\"Entrar\");\r",
+							"        sairButton = new JButton(\"Sair\");\r",
+							"        painel.add(loginButton);\r",
+							"        painel.add(sairButton);\r",
+							"\r",
+							"        add(painel, BorderLayout.CENTER);\r",
+							"\r",
+							"        // Ações dos botões\r",
+							"        loginButton.addActionListener(e -> autenticar());\r",
+							"        sairButton.addActionListener(e -> System.exit(0));\r",
+							"    }\r",
+							"\r",
+							"    private void autenticar() {\r",
+							"        String usuario = usuarioField.getText();\r",
+							"        String senha = new String(senhaField.getPassword());\r",
+							"\r",
+							"        // Exemplo simples de validação (substituir com validação real)\r",
+							"        if (usuario.equals(\"admin\") && senha.equals(\"1234\")) {\r",
+							"            JOptionPane.showMessageDialog(this, \"Login bem-sucedido!\");\r",
+							"         \r",
+							"        } else {\r",
+							"            JOptionPane.showMessageDialog(this, \"Usuário ou senha incorretos.\", \"Erro\", JOptionPane.ERROR_MESSAGE);\r",
+							"        }\r",
+							"    }\r",
+							"\r",
+							"    public static void main(String[] args) {\r",
+							"        SwingUtilities.invokeLater(() -> {\r",
+							"            new HospitalLogin().setVisible(true);\r",
+							"        });\r",
+							"    }\r",
+							"}"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Segurança",
+			"item": [],
+			"id": "45701276-5ea63df9-0542-4ed3-9ed7-ae6348c15aca"
+		},
+		{
+			"name": "AgendaConsulta",
+			"item": [],
+			"id": "45701276-92650be0-4d8b-4065-ab08-9b9ec4a384cb"
+		},
+		{
+			"name": "New Request",
+			"id": "45701276-70870653-3256-4b16-b274-bf46c45a0494",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "45701276-31afbcaa-99ab-4767-81b8-9f49c5a2ce37",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "45701276-ffa40a3f-a18a-4f70-bdc8-0d1c9e7bf3cf",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
