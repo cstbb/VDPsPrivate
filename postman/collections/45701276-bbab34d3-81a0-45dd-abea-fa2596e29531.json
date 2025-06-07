@@ -20,18 +20,6 @@
 						"header": []
 					},
 					"response": []
-				},
-				{
-					"name": "New Request",
-					"id": "45701276-de25976e-262a-4ffa-8626-2179f7a136d1",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": []
-					},
-					"response": []
 				}
 			],
 			"id": "45701276-629701e7-e1c6-4740-8a16-243793c2f66a"
